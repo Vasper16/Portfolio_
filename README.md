@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align='center'>
 <img src='./assets/logo2.png'  width='25%'>
 </p>
@@ -61,3 +62,6 @@ This is my portfolio website built with <a href='https://reactjs.org' target='_b
 <p align='center'>
 (If you liked the project, give it a star 😃)
 </p>
+=======
+# Portfolio
+>>>>>>> f04d15d43285ac3a9cfcf6699e7c39acd7a95b17
