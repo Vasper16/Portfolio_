@@ -1,29 +1,38 @@
-<<<<<<< HEAD
-<p align='center'>
-<img src='./assets/logo2.png'  width='25%'>
+<p align="center">
+  <img src="./src/images/jyotir_logo.png" width="25%" alt="Jyotiraditya Logo" />
 </p>
-<p align='center'>
-<b>Personal portfolio website</b>
+
+<p align="center">
+  <b>Personal Portfolio Website</b>
 </p>
-<p align='center'>
-<a href='https://jyotiraditya.github.io/portfolio' target='_blank'>jyotiraditya.github.io/portfolio</a>
+
+<p align="center">
+  <a href="https://vasper16.github.io/portfolio_" target="_blank">vasper16.github.io/portfolio_</a>
 </p>
 
 ---
 
-<p align='center'>
-This is my portfolio website built with <a href='https://reactjs.org' target='_blank'>React</a> and hosted with <a href='https://pages.github.com/' target='_blank'>GitHub Pages</a>.
+<p align="center">
+  This is my personal portfolio website built with <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">React</a>, deployed on <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">Vercel</a>.
 </p>
 
 <p align="center">
-   <a href="https://github.com/jyotiraditya/portfolio/actions" target="_blank">
-      <img src="https://github.com/jyotiraditya/portfolio/workflows/Build/badge.svg" alt="build status">
-   </a>
+  <a href="https://github.com/Vasper16/Portfolio_/actions" target="_blank" rel="noopener noreferrer">
+    <img src="https://github.com/Vasper16/Portfolio_/workflows/Build/badge.svg" alt="Build Status" />
+  </a>
 </p>
 
-<p align='center'>
-<img src='./assets/displayImg.png'>
+<p align="center">
+  <img src="./src/images/displayImg.png" alt="Portfolio Screenshot" />
 </p>
+
+### 🛠 Installation & Setup
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/Vasper16/Portfolio_.git
+
 
 #### 🛠 Installation and setups
 
