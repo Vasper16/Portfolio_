@@ -1,29 +1,16 @@
 import React from 'react';
+import SkillsGrid from './SkillsGrid';
 import { languages } from '../data';
 import { FaStackOverflow } from 'react-icons/fa';
-import LanguageIcon from './LanguageIcon';
 
 export default function TechStack() {
-  const containerRef = React.useRef(null);
-
   return (
-    <section className='techstack' ref={containerRef}>
-      <div className='techstack-header'>
-        <FaStackOverflow /> Tech Stack
-        <div className='horizontal-line'></div>
+    <section className="techstack" style={{ padding: '3rem 1rem' }}>
+      <div className="techstack-header" style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', fontSize: '2rem', fontWeight: '700', color: '#f0f0f0', marginBottom: '2rem' }}>
+        <FaStackOverflow />
+        Tech Stack
       </div>
-      <div className='techstack-languages'>
-        {languages.map((language, index) => {
-          return (
-            <LanguageIcon
-              key={index}
-              language={language}
-              containerRef={containerRef}
-              style={{ margin: '5px' }}
-            />
-          );
-        })}
-      </div>
+      <SkillsGrid skills={languages} />
     </section>
   );
 }

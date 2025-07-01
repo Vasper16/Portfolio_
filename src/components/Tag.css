@@ -1,0 +1,22 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;            /* space between icon and text */
+  background-color: rgba(255, 255, 255, 0.15);  /* translucent white background */
+  color: #fff;            /* white text for blue background */
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  margin: 4px 6px 4px 0;
+  border-radius: 20px;    /* rounded pill shape */
+  box-shadow: 0 0 4px rgba(0,0,0,0.15);
+  user-select: none;
+  white-space: nowrap;    /* prevent text wrapping inside tag */
+}
+
+.tag-label {
+  /* optional: control the text style */
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}

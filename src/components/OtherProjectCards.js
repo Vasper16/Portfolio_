@@ -4,6 +4,8 @@ import { BsBoxArrowUpRight } from 'react-icons/bs';
 import { IoApps } from 'react-icons/io5';
 import { projects } from '../data';
 import Tag from './Tag';
+import './OtherProjectCards.css';
+
 
 const maxLimit = 3;
 

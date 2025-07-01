@@ -54,7 +54,7 @@ export default function Navbar({ mainRef }) {
       <nav className='nav flex-space-between pd-side-large' ref={navRef}>
         <div className='nav-header flex-space-between'>
           <div className='nav-logo'>
-            <img src={logo} alt='varun' className='nav-logo-img' />
+            <img src={logo} alt='varun' className='nav-logo-img'/>
           </div>
           <Theme />
           <button

@@ -5,18 +5,18 @@
 <b>Personal portfolio website</b>
 </p>
 <p align='center'>
-<a href='https://varun-tiwari.netlify.app/' target='_blank'>varun-tiwari.netlify.app</a>
+<a href='https://jyotiraditya.github.io/portfolio' target='_blank'>jyotiraditya.github.io/portfolio</a>
 </p>
 
 ---
 
 <p align='center'>
-This is my portfolio website build with <a href='https://reactjs.org' target='_blank'>react</a> and hosted with <a href='https://app.netlify.com/' target='_blank'>netlify</a>
+This is my portfolio website built with <a href='https://reactjs.org' target='_blank'>React</a> and hosted with <a href='https://pages.github.com/' target='_blank'>GitHub Pages</a>.
 </p>
 
 <p align="center">
-   <a href="https://app.netlify.com/sites/varun-tiwari/deploys" target="_blank">
-      <img src="https://api.netlify.com/api/v1/badges/78d9d6fe-582e-4f85-ad7a-b6450d84b002/deploy-status" alt="netlify status">
+   <a href="https://github.com/jyotiraditya/portfolio/actions" target="_blank">
+      <img src="https://github.com/jyotiraditya/portfolio/workflows/Build/badge.svg" alt="build status">
    </a>
 </p>
 
@@ -27,10 +27,11 @@ This is my portfolio website build with <a href='https://reactjs.org' target='_b
 #### 🛠 Installation and setup
 
 1. Clone the repo to your local machine.
-2. Install the required dependency using :
+2. Install the required dependencies using:
 
    ```javascript
    npm install
+
    ```
 
 3. Start the development server using :

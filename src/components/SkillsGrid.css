@@ -1,0 +1,64 @@
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1.25rem;
+  padding: 1rem;
+}
+
+.skill-card {
+  background-color: #1e1e2f;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  outline: none;
+}
+
+.skill-card:focus,
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+  background-color: #27293d;
+  z-index: 10;
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-name {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ddd;
+  text-transform: capitalize;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(33, 33, 33, 0.95);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  box-shadow: 0 0 8px rgba(0,0,0,0.4);
+  pointer-events: none;
+  user-select: none;
+  opacity: 0;
+  animation: fadeIn 0.25s forwards;
+  z-index: 100;
+}
+
+/* Tooltip fade in */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

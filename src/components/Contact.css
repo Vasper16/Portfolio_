@@ -1,0 +1,92 @@
+.contact {
+  background: linear-gradient(135deg, #1e293b, #0f172a); /* dark blue-gray gradient */
+  color: #e0e7ff; /* light pastel text */
+  padding: 5rem 1rem;
+  display: flex;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 80vh;
+}
+
+.contact-container {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 1s ease forwards;
+}
+
+.contact-header {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: #c7d2fe; /* lighter blue */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 6px #93c5fd88;
+}
+
+.contact-text {
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #d1d5db;
+  text-shadow: 0 0 4px #64748b88;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: #3b82f6; /* bright blue */
+  color: #f0f9ff;
+  padding: 0.75rem 1.8rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  box-shadow: 0 0 10px #3b82f6aa;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  min-width: 140px;
+}
+
+.contact-btn:hover,
+.contact-btn:focus {
+  background-color: #2563eb; /* darker blue */
+  box-shadow: 0 8px 25px #2563ebcc;
+  transform: translateY(-3px);
+  outline: none;
+}
+
+.icon {
+  font-size: 1.3rem;
+  filter: drop-shadow(0 0 1px #2563ebcc);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-btn {
+    min-width: 100%;
+    justify-content: center;
+  }
+  .contact-buttons {
+    gap: 0.8rem;
+  }
+}

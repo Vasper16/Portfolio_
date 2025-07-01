@@ -1,17 +1,23 @@
 import React from 'react';
-import { FaHeart } from 'react-icons/fa';
+import './Footer.css';
+import { FaHeart, FaGithub } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <div className='footer-info'>
-      <a
-        href='https://github.com/varunKT001/personal-portfolio'
-        target='_blank'
-        rel='noreferrer'
-        className='fancy-link line-height-175'
-      >
-        Designed and build with <FaHeart /> by Varun Kumar Tiwari
-      </a>
-    </div>
+    <footer className="footer-info">
+      <div className="footer-content">
+        <span>
+          Crafted with <FaHeart className="heart-icon" /> by Jyotiraditya
+        </span>
+        <a
+          href="https://github.com/Vasper16"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="footer-link"
+        >
+          <FaGithub /> View Source
+        </a>
+      </div>
+    </footer>
   );
 }
