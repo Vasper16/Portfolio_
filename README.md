@@ -24,6 +24,7 @@
 
 <p align="center">
   <img src="./src/images/displayImg.png" alt="Portfolio Screenshot" />
+
 </p>
 
 ### 🛠 Installation & Setup
