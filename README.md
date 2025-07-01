@@ -25,7 +25,7 @@ This is my portfolio website built with <a href='https://reactjs.org' target='_b
 <img src='./assets/displayImg.png'>
 </p>
 
-#### 🛠 Installation and setup
+#### 🛠 Installation and setups
 
 1. Clone the repo to your local machine.
 2. Install the required dependencies using:
