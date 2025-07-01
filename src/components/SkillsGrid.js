@@ -17,10 +17,16 @@ export default function SkillsGrid({ skills }) {
           onFocus={() => setHoveredSkill(skill.name)}
           onBlur={() => setHoveredSkill(null)}
         >
-          <div className="icon" style={{ color: skill.color }}>
+          <div
+            className="icon"
+            style={{
+              color: skill.color || '#38bdf8', // fallback to blue
+            }}
+          >
             {skill.icon}
           </div>
           <div className="skill-name">{skill.name}</div>
+
           {hoveredSkill === skill.name && skill.desc && (
             <div
               role="tooltip"

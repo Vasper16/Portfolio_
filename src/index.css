@@ -668,9 +668,24 @@ main.container {
   font-family: var(--font-nunito);
 }
 .stack-container {
-  position: relative;
-  z-index: 1;
+  display: flex;           /* Makes child items (icons) lay out in a row */
+  align-items: center;     /* Vertically centers the items */
+  gap: 10px;               /* Adds space between icons */
+  flex-wrap: wrap;         /* Allows wrapping if too many icons */
+  /* Optional for spacing after the label "Tech stack used:" */
+  margin-top: 10px;
 }
+.stack-container h3 {
+  margin-right: 15px;  /* space between label and icons */
+  white-space: nowrap; /* prevents label text from breaking into multiple lines */
+}
+.stack-container > * {
+  display: inline-flex; /* or flex */
+  align-items: center;
+  color: inherit; /* keeps icon color from parent or language icon style */
+}
+
+
 
 @media only screen and (max-width: 1068px) {
   .project-card {

@@ -217,8 +217,7 @@ const projects = [
   {
     name: 'SmartConnect 6G',
     image: smartConnectImg,
-    github_url: 'https://github.com/jyotiraditya/smartconnect-6g',
-    site_url: '',
+    github_url: 'https://github.com/Vasper16/SmartConnect-6G',
     desc: 'An AI-powered Q-learning model to optimize LTE-A random access for M2M communication in future 6G networks. Achieved reduced collision and access delay in simulations using MATLAB and Python.',
     stack: ['Python', 'MATLAB'],  // <-- capitalized to match languages array
     featured: true,
@@ -226,7 +225,7 @@ const projects = [
   {
     name: 'DeepCNN Image Classifier',
     image: deepCnnImg,
-    github_url: 'https://github.com/jyotiraditya/deepcnn-image-classifier',
+    github_url: 'https://github.com/Vasper16/Deep_Vision_Image_Classifier',
     site_url: '',
     desc: 'Built a Deep Convolutional Neural Network (CNN) for image classification using TensorFlow and Keras. Achieved high accuracy on benchmark datasets through advanced data augmentation and model tuning.',
     stack: ['Python', 'TensorFlow', 'Keras'],  // capitalized
@@ -239,13 +238,13 @@ const projects = [
     site_url: '',
     desc: 'An end-to-end automation system using n8n, JSON2Video, and ElevenLabs to generate and publish AI-narrated YouTube videos. Fully no-code with Google Sheets integration.',
     stack: ['JavaScript', 'n8n', 'Node.js'],  // capitalized & matching language names
-    featured: true,
+    featured: false,
   },
   {
     name: 'Portfolio Website',
     image: '',
-    github_url: 'https://github.com/jyotiraditya/portfolio',
-    site_url: 'https://jyotiraditya.github.io/portfolio',
+    github_url: 'https://github.com/Vasper16/Portfolio_',
+    site_url: 'https://portfolio-60qzy86d9-jyotiradityas-projects-f442c465.vercel.app/',
     desc: 'My personal portfolio built using React, fully customized to showcase my projects, resume, and technical background. Hosted on GitHub Pages.',
     stack: ['JavaScript', 'React', 'CSS3', 'HTML5'],  // capitalized
     featured: false,

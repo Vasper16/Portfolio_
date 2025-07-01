@@ -1,13 +1,17 @@
 import React from 'react';
-import logo from '../images/logo.png';
+import logo from '../images/jyotir_logo.png';
 import { navLinks } from '../data';
 import { FaBars } from 'react-icons/fa';
 import { AiFillCloseCircle } from 'react-icons/ai';
 import Theme from './Theme';
+import './Navbar.css';
+
 
 export default function Navbar({ mainRef }) {
   const [navIsOpen, setNavIsOpen] = React.useState(false);
   const [lastScrollTop, setLastScrollTop] = React.useState(0);
+  const [showLogoModal, setShowLogoModal] = React.useState(false);
+
   const navRef = React.useRef(null);
   const childRef = React.useRef(null);
   const containerRef = React.useRef(null);
@@ -33,6 +37,7 @@ export default function Navbar({ mainRef }) {
   function toggleNav() {
     setNavIsOpen(!navIsOpen);
   }
+
   function changeNavOnScroll() {
     let scrollTop = window.scrollY || document.documentElement.scrollTop;
     let height = navRef.current.getBoundingClientRect().height;
@@ -49,12 +54,21 @@ export default function Navbar({ mainRef }) {
     setLastScrollTop(scrollTop);
   }
 
+  function toggleLogoModal() {
+    setShowLogoModal(prev => !prev);
+  }
+
   return (
     <header>
       <nav className='nav flex-space-between pd-side-large' ref={navRef}>
         <div className='nav-header flex-space-between'>
           <div className='nav-logo'>
-            <img src={logo} alt='varun' className='nav-logo-img'/>
+            <img
+              src={logo}
+              alt='logo'
+              onClick={toggleLogoModal}
+              style={{ width: '70px', height: 'auto', cursor: 'pointer' }}
+            />
           </div>
           <Theme />
           <button
@@ -82,6 +96,15 @@ export default function Navbar({ mainRef }) {
           </ul>
         </div>
       </nav>
+
+      {/* Modal */}
+      {showLogoModal && (
+        <div className="modal-overlay" onClick={toggleLogoModal}>
+          <div className="modal-content">
+            <img src={logo} alt="Full logo" className="modal-logo-img" />
+          </div>
+        </div>
+      )}
     </header>
   );
 }
