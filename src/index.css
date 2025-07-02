@@ -392,13 +392,16 @@ main.container {
   justify-content: center;
 }
 .hero-small-heading {
-  margin-top: var(--spacing-large);
-  margin-bottom: var(--spacing-small);
-  padding: 0;
-  font-family: var(--font-mono);
-  font-size: clamp(var(--font-small), 5vw, var(--font-medium));
-  color: var(--clr-primary-10);
+  font-size: 28px !important;
+  color: white !important;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative !important;
+  z-index: 100 !important;
+  overflow: visible !important;
+  margin-top: 20px !important;
 }
+
+
 .hero-big-heading {
   margin: 0;
   padding: 0;

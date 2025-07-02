@@ -244,7 +244,7 @@ const projects = [
     name: 'Portfolio Website',
     image: '',
     github_url: 'https://github.com/Vasper16/Portfolio_',
-    site_url: 'https://portfolio-60qzy86d9-jyotiradityas-projects-f442c465.vercel.app/',
+    site_url: '',
     desc: 'My personal portfolio built using React, fully customized to showcase my projects, resume, and technical background. Hosted on GitHub Pages.',
     stack: ['JavaScript', 'React', 'CSS3', 'HTML5'],  // capitalized
     featured: false,

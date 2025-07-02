@@ -2,13 +2,13 @@
 
 .other-projects {
   padding: 3rem 1rem;
-  background-color: #f9f9f9;
+  background-color: var(--clr-primary-1); /* ✅ updated background to match site */
 }
 
 .other-projects-header h1 {
   font-size: 2.2rem;
   font-weight: 700;
-  color: #333;
+  color: #ccd6f6; /* optional: change to match your site's text color */
   margin-bottom: 2rem;
   text-align: center;
   position: relative;
@@ -25,31 +25,35 @@
   position: relative;
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 
+/* Common face styling */
 .card .face {
   width: 100%;
   min-height: 280px;
   border-radius: 12px;
   backface-visibility: hidden;
-  transition: transform 0.6s ease;
+  transition: transform 1s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
   padding: 1.5rem;
   color: #fff;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
+/* Front face */
 .face1 {
   background: #2a93ec;
   transform: rotateY(0deg);
   z-index: 2;
 }
 
+/* Back face */
 .face2 {
   background: #1b1f23;
-  position: absolute;
-  top: 0;
-  left: 0;
   transform: rotateY(180deg);
   z-index: 1;
   display: flex;
@@ -60,12 +64,29 @@
 
 .card:hover .face1 {
   transform: rotateY(180deg);
+  pointer-events: none; /* 🆕 Disable clicks on front face when flipped */
 }
 
 .card:hover .face2 {
   transform: rotateY(360deg);
   z-index: 2;
+  pointer-events: auto; /* 🆕 Enable clicks on back face */
 }
+
+/* Add transition delay for smoothness */
+.card .face {
+  transition: transform 0.6s ease 0.3s; /* 0.3s delay for smooth flip */
+}
+
+/* ✅ Removed old hover flipping
+.card:hover .face1 {
+  transform: rotateY(180deg);
+}
+.card:hover .face2 {
+  transform: rotateY(360deg);
+  z-index: 2;
+}
+*/
 
 .other-projects-card-links {
   margin: 1rem 0;
