@@ -39,6 +39,8 @@ import values from 'values.js';
 import smartConnectImg from './images/smartconnect.png';
 import deepCnnImg from './images/deep_cnn.png';
 import youtubeAutoImg from './images/youtubeauto.png';
+import chatStreamImg from './images/ChatStream.png';
+import learnifyImg from './images/lms_saas.png';
 
 const navLinks = [
   {
@@ -205,15 +207,153 @@ const languages = [
     color: '#000000',
     desc: 'Express.js is a web framework for Node.js used to build APIs.',
   },
- {
+  {
   name: 'AWS',
   icon: <FaAws />,
   color: '#FF9900',
   desc: 'Amazon Web Services (AWS) offers cloud computing and hosting solutions.',
-}
+  },
+  // NEWLY ADDED STACKS BELOW
+  {
+    name: 'Next.js',
+    icon: (
+      <p
+        className="flex-center pd-0 mg-0 tf-y-5"
+        style={{ width: 36, height: 36, fontWeight: 'bold' }}
+      >
+        Nx
+      </p>
+    ),
+    color: '#000000',
+    desc: 'Next.js is a React framework for building production-grade web apps.',
+  },
+  {
+    name: 'Supabase',
+    icon: (
+      <p
+        className="flex-center pd-0 mg-0 tf-y-5"
+        style={{ width: 36, height: 36, color: '#3ECF8E', fontWeight: 'bold' }}
+      >
+        SB
+      </p>
+    ),
+    color: '#3ECF8E',
+    desc: 'Supabase is an open-source Firebase alternative for real-time databases and auth.',
+  },
+  {
+    name: 'Stripe',
+    icon: (
+      <p
+        className="flex-center pd-0 mg-0 tf-y-5"
+        style={{ width: 36, height: 36, color: '#635BFF', fontWeight: 'bold' }}
+      >
+        $
+      </p>
+    ),
+    color: '#635BFF',
+    desc: 'Stripe is a payment processing platform for online transactions and billing.',
+  },
+  {
+    name: 'VAPI',
+    icon: (
+      <p
+        className="flex-center pd-0 mg-0 tf-y-5"
+        style={{ width: 36, height: 36, fontWeight: 'bold' }}
+      >
+        VA
+      </p>
+    ),
+    color: '#6C63FF',
+    desc: 'VAPI enables real-time voice interaction via AI agents and APIs.',
+  },
+  {
+    name: 'Clerk',
+    icon: (
+      <p
+        className="flex-center pd-0 mg-0 tf-y-5"
+        style={{ width: 36, height: 36, fontWeight: 'bold' }}
+      >
+        Ck
+      </p>
+    ),
+    color: '#5C33F6',
+    desc: 'Clerk provides complete user authentication and account management.',
+  },
+  {
+    name: 'Streamlit',
+    icon: (
+      <p
+        className="flex-center pd-0 mg-0 tf-y-5"
+        style={{ width: 36, height: 36, fontWeight: 'bold' }}
+      >
+        St
+      </p>
+    ),
+    color: '#FF4B4B',
+    desc: 'Streamlit is a Python framework for building interactive ML/data science web apps.',
+  },
+  {
+    name: 'LLM',
+    icon: (
+      <p
+        className="flex-center pd-0 mg-0 tf-y-5"
+        style={{ width: 36, height: 36, fontWeight: 'bold' }}
+      >
+        LLM
+      </p>
+    ),
+    color: '#5D3FD3',
+    desc: 'Large Language Models (LLMs) power advanced natural language interfaces and tasks.',
+  },
+  {
+    name: 'Tailwind',
+    icon: (
+      <p
+        className="flex-center pd-0 mg-0 tf-y-5"
+        style={{ width: 36, height: 36, fontWeight: 'bold' }}
+      >
+        tw
+      </p>
+    ),
+    color: '#38BDF8',
+    desc: 'Tailwind CSS is a utility-first framework for rapid UI development.',
+  },
+  {
+    name: 'n8n',
+    icon: (
+      <p
+        className="flex-center pd-0 mg-0 tf-y-5"
+        style={{ width: 36, height: 36, fontWeight: 'bold' }}
+      >
+        n8
+      </p>
+    ),
+    color: '#A259FF',
+    desc: 'n8n is a workflow automation tool that connects services using no-code/low-code logic.',
+  },
 ];
 
 const projects = [
+  {
+  name: 'Learnify LMS App',
+  image: learnifyImg,  // Once your app image is ready, add it in /images and import here
+  github_url: 'https://github.com/Vasper16/Learnify-LMS',
+  site_url: '',
+  desc: 'An AI-powered Learning Management System built with Next.js, Supabase, Stripe, and VAPI. Supports interactive voice-based learning and subscription billing.',
+  stack: ['JavaScript', 'Next.js', 'Supabase', 'Stripe', 'VAPI' , 'Clerk'],  // Add 'Next.js', 'Supabase' to languages if needed
+  featured: true,
+  },
+
+  {
+  name: 'LLM ChatStream',
+  image: chatStreamImg,  // Add your image later in `./images/` and import like others
+  github_url: 'https://github.com/Vasper16/LLM-ChatStream',
+  site_url: 'https://llm-chatstream-mwm6vkgzr2emgz9ykxssks.streamlit.app/',
+  desc: 'A Streamlit-based LLM chatbot with multiple theme support, PDF export, and conversational memory. Built for efficient, AI-powered dialogue applications.',
+  stack: ['Python', 'Streamlit', 'LLM', 'Tailwind'],  // Match this to `languages` or extend if needed
+  featured: true,
+  },
+
   {
     name: 'SmartConnect 6G',
     image: smartConnectImg,
@@ -222,6 +362,7 @@ const projects = [
     stack: ['Python', 'MATLAB'],  // <-- capitalized to match languages array
     featured: true,
   },
+  
   {
     name: 'DeepCNN Image Classifier',
     image: deepCnnImg,
@@ -231,6 +372,7 @@ const projects = [
     stack: ['Python', 'TensorFlow', 'Keras'],  // capitalized
     featured: true,
   },
+  
   {
     name: 'AI YouTube Automation',
     image: youtubeAutoImg,
@@ -240,11 +382,12 @@ const projects = [
     stack: ['JavaScript', 'n8n', 'Node.js'],  // capitalized & matching language names
     featured: false,
   },
+  
   {
     name: 'Portfolio Website',
     image: '',
     github_url: 'https://github.com/Vasper16/Portfolio_',
-    site_url: '',
+    site_url: 'https://portfolio-seven-flax-38.vercel.app/',
     desc: 'My personal portfolio built using React, fully customized to showcase my projects, resume, and technical background. Hosted on GitHub Pages.',
     stack: ['JavaScript', 'React', 'CSS3', 'HTML5'],  // capitalized
     featured: false,
